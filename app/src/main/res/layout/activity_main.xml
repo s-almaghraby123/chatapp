@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgorund"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="171dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngtreevector_chat_icon_3762784" />
+
+    <TextView
+        android:id="@+id/titleA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appN"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/title1"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/edit_UN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="@string/use"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="11dp"
+        android:paddingStart="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/message1"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/message1"
+        app:layout_constraintTop_toBottomOf="@+id/message1" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="@string/Em"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="11dp"
+        android:paddingStart="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/message1"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/message1"
+        app:layout_constraintTop_toBottomOf="@+id/message1" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="11dp"
+        android:paddingStart="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/message1"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/message1"
+        app:layout_constraintTop_toBottomOf="@+id/message1" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#fe3c72"
+        android:text="@string/title1"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pass"
+        app:layout_constraintStart_toStartOf="@+id/edit_pass"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pass" />
+
+    <Button
+        android:id="@+id/alreadyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/backgorund"
+        android:text="@string/askIfHaveAcc"
+        android:textAllCaps="false"
+
+        app:layout_constraintEnd_toEndOf="@+id/signup_button"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintTop_toTopOf="@+id/edit_email"
+        app:srcCompat="@drawable/icons8_email_50" />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="176dp"
+        android:paddingBottom="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pass"
+        app:layout_constraintTop_toTopOf="@+id/edit_pass"
+        app:srcCompat="@drawable/icons8_lock" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="32dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="176dp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_UN"
+        app:layout_constraintTop_toTopOf="@+id/edit_UN"
+        app:srcCompat="@drawable/icons8_user_48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
